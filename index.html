@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lā lā lā, šis ir visraksts</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="full">
+        <div class="left">
+    <h1 id="pirmaisHeading">Šis ir mans pirmais HTML dokuments. Lā lā lā</h1>
+
+<h2 class="note">Šī ir pirmā rindkopa</h2>
+
+<!-- p nozīme paragrāfs
+<br> nozīmē jauna līnija
+<h1> lidz <h6> mums ir virsraksti
+
+ -->
+
+<p class="note">
+    Šis ir <strong>apraksts  par</strong> mani. 
+    <a href="https://www.linkedin.com/in/juriskreilis/" target="_blank">LINKEDIN</a>
+    
+
+    <h6 class="note">Apakšvirsraksts </h6>
+    volutpat ac sit amet odio. Integer sed lacus a odio facilisis iaculis vitae ac massa. Integer non ornare eros. Integer id feugiat dui, non dictum arcu. Phasellus a arcu nibh
+</p>
+
+<h2>Šī ir otrā rindkopa</h2>
+<p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by acc
+</p>
+ 
+<h2>Bilde ar picu</h2>
+    <img src="img/pizza.png" width="15%" alt="bilde ar picu">
+</div>
+<div class="right">
+    <br>
+    <img src="https://www.lu.lv/templates/LU.LV/Public/Images/logo_100_blue.svg" height="100px"  alt="LU LOGO">
+
+    <input id="vecums" maxlength="3">
+    <button id="poga">SPIED MANI</button>
+    
+    <p>Lietotāja vecums ir: <strong id="lietotajavecums"></strong>> </p>
+
+    <h3>Iepirkumu saraksts</h3>
+    <ul>
+        <li><h3><a href="http://www.piens.lv">Piens</a></h3></li>
+        <li>Maize</li>
+        <li>Cukurs</li>
+    </ul>
+
+    <h3 >Kā uzvārīt tēju</h3>
+    <ol>
+        <li>Jāuzvāra ūdens</li>
+        <li>Jāieber tēja krūzē</li>
+        <li>Jāielej ūdens krūzē</li>
+        <li>Jāpagaida kamēr tēja ievilksies</li>
+    </ol>
+</div>
+</div>
+</body>
+
+<script>
+document.getElementById("poga").onclick = function() {
+    var vecums = document.getElementById("vecums").value;
+    alert("Hello Juris! Tavs vecums ir " +  vecums);
+    document.getElementById("lietotajavecums").innerText = vecums;
+};
+</script>
+
+
+</html>
